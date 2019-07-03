@@ -44,6 +44,7 @@
 .person__details {
   appearance: none;
   border: none;
+  background: #fff;
 }
 
 .header__button:hover,
