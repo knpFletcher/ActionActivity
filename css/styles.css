@@ -1,0 +1,175 @@
+/* Document */
+.l-body {
+  font-family: "Montserrat", sans-serif;
+  max-width: 940px;
+  background-color: #EAEEF5;
+  margin: 2%;
+}
+
+.people,
+.header__view-options,
+.header__button.name {
+  background-color: #fff;
+}
+
+.l-header,
+.header__view-options,
+.people__person,
+.contact__info,
+.person__contact,
+.person__quick-details,
+.header__people,
+.header__filters {
+  display: flex;
+  align-items: center;
+}
+
+.l-header,
+.people__person {
+  justify-content: space-between;
+}
+
+/* Lists */
+.contact__info,
+.header__view-options,
+.people,
+.person__info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Buttons */
+.header__button,
+.person__details {
+  appearance: none;
+  border: none;
+}
+
+.header__button:hover,
+.header__button:focus,
+.person__details:hover,
+.person__details:focus {}
+
+.header__button:active,
+.person__details:active {}
+
+.header__button.export {
+  background-color: #F7F9FC;
+  font-size: 12px;
+  max-height: 50px;
+  padding: .4em .7em;
+  border-radius: 5px;
+  margin: 1em;
+  -webkit-box-shadow: 0 4px 4px -6px grey;
+	   -moz-box-shadow: 0 4px 4px -6px grey;
+	        box-shadow: 0 4px 4px -6px grey;
+}
+
+.header__people-count,
+.person__name,
+.header__button.export {
+  font-weight: bolder;
+}
+
+.header__button.name {
+  margin-right: 1.2em;
+  padding: 1em;;
+}
+
+.header__button.name,
+.header__view-options {
+  line-height: 1.5em;
+}
+
+.header__view-options {
+  padding: 1em .5em;
+}
+
+.people,
+.header__button.name,
+.header__view-options {
+  border-radius: 5px;
+}
+
+.people li:nth-last-child(1) {
+  border-bottom: none;
+}
+
+.people,
+.person__initials,
+.header__button.name,
+.header__view-options {
+  border: 1px solid #CDD3E1;
+}
+
+.people__person {
+  border-bottom: 1px solid #CDD3E1;
+  padding: 0 1em;
+}
+
+.person__initials {
+  border-radius: 50%;
+  font-size: 16px;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  margin-right: 1em;
+  padding: .3em;
+}
+
+.people__person--full-details {
+  border: 5px solid #00B241;
+}
+
+.person__location {
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: .1em;
+  padding-top: .3em;
+}
+
+.contact__info-item {
+  margin: 0 .5em;
+}
+
+.person__details {
+  margin-left: 1.5em;
+}
+
+/* Icons */
+/* light grey */
+.person__contact--incomplete {
+  color: #DCE0EC;
+}
+
+/* medium grey */
+.header__button--unselected {
+  color: #CDD3E1;
+}
+
+/* dark grey */
+.person__initials,
+.person__location,
+.fa-sort-alpha-up,
+.fa-chevron-down {
+  color: #868DA1;
+}
+
+.contact__info,
+.header__button--selected,
+.fa-file-download,
+.header__button.export {
+  color: #005DFA;
+}
+
+.fa-file-download,
+.fa-sort-alpha-up {
+  padding-right: .5em;
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) {}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {}
