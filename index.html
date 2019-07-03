@@ -16,81 +16,103 @@
 
 <body class="l-body">
   <header class="l-header">
-    <h1>4 People</h1>
-    <button type="button">Export</button>
-    <button type="button">Last Name</button>
-    <ul>
-      <li><button type="button">List</button></li>
-      <li><button type="button">Graph</button></li>
-      <li><button type="button">Map</button></li>
-    </ul>
+    <div class=" header__people">
+      <h1 class="header__people-count">4 People</h1>
+      <button type="button" class="header__button export"><i class="fas fa-file-download fa-s"></i>Export</button>
+    </div>
+    <div class="header__filters">
+      <button type="button" class="header__button name"> <i class="fas fa-sort-alpha-up"></i>Last Name</button>
+      <ul class="header__view-options">
+        <li><button type="button" class="header__button header__button--selected"><i class="fas fa-list fa-lg"></i></button></li>
+        <li><button type="button" class="header__button header__button--unselected"><i class="far fa-chart-bar fa-lg"></i></button></li>
+        <li><button type="button" class="header__button header__button--unselected"><i class="far fa-map fa-lg"></i></button></li>
+      </ul>
+    </div>
   </header>
 
   <main class="l-main">
     <ul class="people">
       <li class="people__person">
-        <ul>
-          <li class="person__initials">JC</li>
-          <li class="person__name">Jack Caputo</li>
-          <li class="person__location">Redondo Beach, CA</li>
-        </ul>
-        <address class="person__contact">
-          <ul>
-            <li class="contact__email">Email</li>
-            <li class="contact__phone">Phone</li>
-            <li class="contact__message person__contact--incomplete">Message</li>
-            <li class="contact__location">Location</li>
+        <div class="person__quick-details">
+          <p class="person__initials">JC</p>
+          <ul class="person__info">
+            <li class="person__name">Jack Caputo</li>
+            <li class="person__location">Redondo Beach, CA</li>
           </ul>
-        </address>
-        <button type="button" class="person__details">Details</button>
+        </div>
+        <div class="person__contact">
+          <address>
+            <ul class="contact__info">
+              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+              <li class="contact__info-item person__contact--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            </ul>
+          </address>
+          <button type="button" class="person__details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
       </li> <!-- End Person -->
       <li class="people__person">
-        <ul>
-          <li class="person__initials">MG</li>
-          <li class="person__name">Martha Grant</li>
-          <li class="person__location">Henderson, TX</li>
-        </ul>
-        <address class="person__contact">
-          <ul>
-            <li class="contact__email person__contact--incomplete">Email</li>
-            <li class="contact__phone">Phone</li>
-            <li class="contact__message">Message</li>
-            <li class="contact__location">Location</li>
+        <div class="person__quick-details">
+
+          <p class="person__initials">MG</p>
+          <ul class="person__info">
+            <li class="person__name">Martha Grant</li>
+            <li class="person__location">Henderson, TX</li>
           </ul>
-        </address>
-        <button type="button" class="person__details">Details</button>
+        </div>
+        <div class="person__contact">
+          <address>
+            <ul class="contact__info">
+              <li class="contact__info-item person__contact--incomplete"><i class="far fa-envelope fa-m"></i></li>
+              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+              <li class="contact__info-item"><i class="far fa-comment-alt fa-m"></i></li>
+              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            </ul>
+          </address>
+          <button type="button" class="person__details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
       </li> <!-- End Person -->
       <li class="people__person">
-        <ul>
-          <li class="person__initials">BG</li>
-          <li class="person__name">Barbara Glaser</li>
-          <li class="person__location"></li>
-        </ul>
-        <address class="person__contact">
-          <ul>
-            <li class="contact__email">Email</li>
-            <li class="contact__phone">Phone</li>
-            <li class="contact__message person__contact--incomplete">Message</li>
-            <li class="contact__location person__contact--incomplete">Location</li>
+        <div class="person__quick-details">
+
+          <p class="person__initials">BG</p>
+          <ul class="person__info">
+            <li class="person__name">Barbara Glaser</li>
+            <li class="person__location"></li>
           </ul>
-        </address>
-        <button type="button" class="person__details">Details</button>
+        </div>
+        <div class="person__contact">
+          <address>
+            <ul class="contact__info">
+              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+              <li class="contact__info-item person__contact--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+              <li class="contact__info-item location person__contact--incomplete"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            </ul>
+          </address>
+          <button type="button" class="person__details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
       </li> <!-- End Person -->
       <li class="people__person">
-        <ul>
-          <li class="person__initials people__person--full-details">AC</li>
-          <li class="person__name">Anjuli Cameron</li>
-          <li class="person__location">Washington, DC</li>
-        </ul>
-        <address class="person__contact">
-          <ul>
-            <li class="contact__email">Email</li>
-            <li class="contact__phone">Phone</li>
-            <li class="contact__message">Message</li>
-            <li class="contact__location">Location</li>
+        <div class="person__quick-details">
+          <p class="person__initials people__person--full-details">AC</p>
+          <ul class="person__info">
+            <li class="person__name">Anjuli Cameron</li>
+            <li class="person__location">Washington, DC</li>
           </ul>
-          <button type="button" class="person__details">Details</button>
-        </address>
+        </div>
+        <div class="person__contact">
+          <address>
+            <ul class="contact__info">
+              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+              <li class="contact__info-item "><i class="far fa-comment-alt fa-m"></i></li>
+              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            </ul>
+          </address>
+          <button type="button" class="person__details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
       </li> <!-- End Person -->
     </ul> <!-- End People -->
   </main>
