@@ -13,7 +13,7 @@
 }
 
 .l-header,
-.people__person {
+.m-people__person {
   display: block;
 }
 
@@ -116,7 +116,7 @@
   border-bottom: none;
 }
 
-.people__person {
+.m-people__person {
   border-bottom: 1px solid #CDD3E1;
   padding: 0 1em 1em;
 }
@@ -184,13 +184,13 @@
 @media only screen and (min-width: 768px) {
 
   .l-header,
-  .people__person {
+  .m-people__person {
     display: flex;
     align-items: center;
   }
 
   .l-header,
-  .people__person {
+  .m-people__person {
     justify-content: space-between;
   }
 
@@ -206,7 +206,7 @@
     margin-left: 0;
   }
 
-  .people__person {
+  .m-people__person {
     padding-bottom: 0;
   }
 }
