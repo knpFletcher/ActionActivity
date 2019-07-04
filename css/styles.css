@@ -37,6 +37,10 @@
   justify-content: space-between;
 }
 
+.contact__details.hidden {
+	display: none;
+}
+
 /* Box Model */
 .contact__info-item {
   margin: 0 .5em;
