@@ -13,7 +13,7 @@
 
 /* Display */
 .l-header,
-.m-people__person {
+.person__data {
   display: block;
 }
 
@@ -63,12 +63,9 @@
   margin-left: 1.5em;
 }
 
-.people__person--full-details {
-  border: 5px solid #00B241;
-}
-
 /* Lists */
 .contact__info,
+.detail__list,
 .header__view-options,
 .people,
 .person__info {
@@ -77,6 +74,7 @@
 }
 
 .contact__info,
+.detail__list,
 .people,
 .person__info {
   padding: 0;
@@ -105,6 +103,15 @@
   letter-spacing: .1em;
   padding-top: .3em;
   text-transform: uppercase;
+}
+
+.contact__details {
+  display: block;
+  margin-left: .8em;
+}
+
+.contact__details address {
+  font-style: normal;
 }
 
 /* Buttons */
@@ -145,8 +152,12 @@
 .header__button.name,
 .header__view-options,
 .people,
-.person__initials, {
+.person__initials {
   border: 1px solid #CDD3E1;
+}
+
+.people__person--full-details {
+  border: 5px solid #00B241;
 }
 
 /* Icons */
@@ -171,7 +182,8 @@
 .contact__info,
 .fa-file-download,
 .header__button--selected,
-.header__button.export {
+.header__button.export,
+.detail__list-item > .fa-m {
   color: #005DFA;
 }
 
@@ -180,18 +192,23 @@
   padding-right: .5em;
 }
 
+.detail__list-item > .fa-m {
+  line-height: 2;
+  padding-right: 1em;
+}
+
 /* Tablet & Desktop */
 @media only screen and (min-width: 768px) {
 
   /* Display */
   .l-header,
-  .m-people__person {
+  .person__data {
     display: flex;
     align-items: center;
   }
 
   .l-header,
-  .m-people__person {
+  .person__data {
     justify-content: space-between;
   }
 
@@ -204,7 +221,7 @@
     margin-bottom: 0;
   }
 
-  .m-people__person {
+  .person__data {
     padding-bottom: 0;
   }
 
