@@ -52,7 +52,7 @@
 }
 
 .l-header {
-  margin-bottom: 20px;
+  margin-bottom: 1em;
 }
 
 .person__contact {
@@ -61,6 +61,10 @@
 
 .person__details {
   margin-left: 1.5em;
+}
+
+.person__data {
+  padding-bottom: 1em;
 }
 
 /* Lists */
@@ -82,7 +86,7 @@
 
 .m-people__person {
   border-bottom: 1px solid #CDD3E1;
-  padding: 0 1em 1em;
+  padding: 0 1em;
 }
 
 .people li:nth-last-child(1) {
@@ -107,7 +111,7 @@
 
 .contact__details {
   display: block;
-  margin-left: .8em;
+  margin: 0 0 1em .8em;
 }
 
 .contact__details address {
