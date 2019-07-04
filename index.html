@@ -10,8 +10,6 @@
   <link rel="stylesheet" href="css/styles.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
-  <!-- Scripts -->
-  <script src="https://kit.fontawesome.com/51b5369df9.js"></script>
 </head>
 
 <body class="l-body">
@@ -33,6 +31,7 @@
   <main class="l-main">
     <ul class="people">
       <li class="m-people__person">
+        <div class="person__data">
         <div class="person__quick-details">
           <p class="person__initials">JC</p>
           <ul class="person__info">
@@ -41,20 +40,29 @@
           </ul>
         </div>
         <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person0-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+      </div>
+        <div class="contact__details" id="person0-details">
           <address>
-            <ul class="contact__info">
-              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
-              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
-              <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
-              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Redondo Beach, CA</li>
             </ul>
           </address>
-          <button type="button" class="person__details" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
         </div>
       </li> <!-- End Person -->
-      <li class="m-people__person">
-        <div class="person__quick-details">
 
+      <li class="m-people__person">
+        <div class="person__data">
+        <div class="person__quick-details">
           <p class="person__initials">MG</p>
           <ul class="person__info">
             <li class="person__name">Martha Grant</li>
@@ -62,20 +70,27 @@
           </ul>
         </div>
         <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person1-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+      </div>
+        <div class="contact__details" id="person1-details">
           <address>
-            <ul class="contact__info">
-              <li class="contact__info-item contact__info--incomplete"><i class="far fa-envelope fa-m"></i></li>
-              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
-              <li class="contact__info-item"><i class="far fa-comment-alt fa-m"></i></li>
-              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Henderson, TX</li>
             </ul>
           </address>
-          <button type="button" class="person__details" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
         </div>
       </li> <!-- End Person -->
       <li class="m-people__person">
+        <div class="person__data">
         <div class="person__quick-details">
-
           <p class="person__initials">BG</p>
           <ul class="person__info">
             <li class="person__name">Barbara Glaser</li>
@@ -83,18 +98,26 @@
           </ul>
         </div>
         <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location contact__info--incomplete"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person2-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+        </div>
+        <div class="contact__details" id="person2-details">
           <address>
-            <ul class="contact__info">
-              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
-              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
-              <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
-              <li class="contact__info-item location contact__info--incomplete"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
             </ul>
           </address>
-          <button type="button" class="person__details" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m" ></i></button>
         </div>
       </li> <!-- End Person -->
       <li class="m-people__person">
+        <div class="person__data">
         <div class="person__quick-details">
           <p class="person__initials people__person--full-details">AC</p>
           <ul class="person__info">
@@ -103,19 +126,32 @@
           </ul>
         </div>
         <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item "><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person3-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+        </div>
+        <div class="contact__details" id="person3-details">
           <address>
-            <ul class="contact__info">
-              <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
-              <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
-              <li class="contact__info-item "><i class="far fa-comment-alt fa-m"></i></li>
-              <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Washington, DC</li>
             </ul>
           </address>
-          <button type="button" class="person__details" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
         </div>
       </li> <!-- End Person -->
     </ul> <!-- End People -->
   </main>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/51b5369df9.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
 
 </body>
 
