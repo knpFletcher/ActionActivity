@@ -1,9 +1,9 @@
 /* Document */
 .l-body {
-  font-family: "Montserrat", sans-serif;
-  max-width: 940px;
   background-color: #EAEEF5;
+  font-family: "Montserrat", sans-serif;
   margin: 5%;
+  max-width: 940px;
 }
 
 .people,
@@ -28,11 +28,6 @@
 .person__quick-details,
 .contact__info {
   display: flex;
-}
-
-.header__filters,
-.header__view-options, {
-  justify-content: space-evenly;
 }
 
 .person__quick-details {
@@ -71,18 +66,18 @@
 .header__button,
 .person__details {
   appearance: none;
-  border: none;
   background: #fff;
+  border: none;
 }
 
 .header__button.export {
   background-color: #F7F9FC;
-  font-size: .7em;
   border-radius: 5px;
+  font-size: .7em;
   margin: 2.5em 1em;
   -webkit-box-shadow: 0 4px 4px -6px grey;
-	   -moz-box-shadow: 0 4px 4px -6px grey;
-	        box-shadow: 0 4px 4px -6px grey;
+  -moz-box-shadow: 0 4px 4px -6px grey;
+  box-shadow: 0 4px 4px -6px grey;
 }
 
 .header__people-count,
@@ -129,11 +124,11 @@
 
 .person__initials {
   border-radius: 50%;
-  width: 2em;
   line-height: 2em;
-  text-align: center;
   margin-right: 1em;
   padding: .3em;
+  text-align: center;
+  width: 2em;
 }
 
 .people__person--full-details {
@@ -141,10 +136,10 @@
 }
 
 .person__location {
-  text-transform: uppercase;
   font-size: .6em;
   letter-spacing: .1em;
   padding-top: .3em;
+  text-transform: uppercase;
 }
 
 .contact__info-item {
@@ -188,6 +183,7 @@
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
+
   .l-header,
   .header__view-options,
   .people__person,
@@ -218,7 +214,6 @@
   .people__person {
     padding-bottom: 0;
   }
-
 }
 
 /* Desktop */
