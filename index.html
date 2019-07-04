@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Action Builder Activity</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="l-body">
+  <header class="l-header">
+    <div class="header__people">
+      <h1 class="header__people-count">4 People</h1>
+      <button type="button" class="header__button export" aria-label="Export data"><i class="fas fa-file-download fa-s"></i>Export</button>
+    </div>
+    <div class="header__filters">
+      <button type="button" class="header__button name" aria-label="Sort by Last Name"> <i class="fas fa-sort-alpha-up"></i>Last Name</button>
+      <ul class="header__view-options">
+        <li><button type="button" class="header__button header__button--selected" aria-label="List People"><i class="fas fa-list fa-lg"></i></button></li>
+        <li><button type="button" class="header__button header__button--unselected" aria-label="Graph People"><i class="far fa-chart-bar fa-lg"></i></button></li>
+        <li><button type="button" class="header__button header__button--unselected" aria-label="Map People"><i class="far fa-map fa-lg"></i></button></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="l-main">
+    <ul class="people">
+      <li class="m-people__person">
+        <div class="person__data">
+        <div class="person__quick-details">
+          <p class="person__initials">JC</p>
+          <ul class="person__info">
+            <li class="person__name">Jack Caputo</li>
+            <li class="person__location">Redondo Beach, CA</li>
+          </ul>
+        </div>
+        <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person0-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+      </div>
+        <div class="contact__details" id="person0-details">
+          <address>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Redondo Beach, CA</li>
+            </ul>
+          </address>
+        </div>
+      </li> <!-- End Person -->
+
+      <li class="m-people__person">
+        <div class="person__data">
+        <div class="person__quick-details">
+          <p class="person__initials">MG</p>
+          <ul class="person__info">
+            <li class="person__name">Martha Grant</li>
+            <li class="person__location">Henderson, TX</li>
+          </ul>
+        </div>
+        <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person1-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+      </div>
+        <div class="contact__details" id="person1-details">
+          <address>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Henderson, TX</li>
+            </ul>
+          </address>
+        </div>
+      </li> <!-- End Person -->
+      <li class="m-people__person">
+        <div class="person__data">
+        <div class="person__quick-details">
+          <p class="person__initials">BG</p>
+          <ul class="person__info">
+            <li class="person__name">Barbara Glaser</li>
+            <li class="person__location"></li>
+          </ul>
+        </div>
+        <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item contact__info--incomplete"><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location contact__info--incomplete"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person2-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+        </div>
+        <div class="contact__details" id="person2-details">
+          <address>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+            </ul>
+          </address>
+        </div>
+      </li> <!-- End Person -->
+      <li class="m-people__person">
+        <div class="person__data">
+        <div class="person__quick-details">
+          <p class="person__initials people__person--full-details">AC</p>
+          <ul class="person__info">
+            <li class="person__name">Anjuli Cameron</li>
+            <li class="person__location">Washington, DC</li>
+          </ul>
+        </div>
+        <div class="person__contact">
+          <ul class="contact__info">
+            <li class="contact__info-item"><i class="far fa-envelope fa-m"></i></li>
+            <li class="contact__info-item"><i class="fas fa-phone fa-m"></i></li>
+            <li class="contact__info-item "><i class="far fa-comment-alt fa-m"></i></li>
+            <li class="contact__info-item location"><i class="fas fa-map-marker-alt fa-m"></i></li>
+          </ul>
+          <button type="button" class="person__details" id="person3-anchor" aria-label="Contact Details"><i class="fas fa-chevron-down fa-m"></i></button>
+        </div>
+        </div>
+        <div class="contact__details" id="person3-details">
+          <address>
+            <ul class="detail__list">
+              <li class="detail__list-item"><i class="far fa-envelope fa-m"></i><a href="mailto:email@email.com">email@email.com</a></li>
+              <li class="detail__list-item"><i class="fas fa-phone fa-m"></i><a href="tel:555-555-5555">555-555-5555</a></li>
+              <li class="detail__list-item location"><i class="fas fa-map-marker-alt fa-m"></i>742 Evergreen Terrace, Washington, DC</li>
+            </ul>
+          </address>
+        </div>
+      </li> <!-- End Person -->
+    </ul> <!-- End People -->
+  </main>
+
+  <!-- Scripts -->
+  <script src="https://kit.fontawesome.com/51b5369df9.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+</body>
+
+</html>
