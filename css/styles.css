@@ -1,5 +1,16 @@
+:root {
+	--green: #00B241;
+	--light-blue: #EAEEF5;
+	--blue: #005DFA;
+	--white: #fff;
+	--off-white: #F7F9FC;
+	--light-grey: #DCE0EC;
+	--medium-grey: #CDD3E1;
+	--dark-grey: #868DA1;
+}
+
 .l-body {
-  background-color: #EAEEF5;
+  background-color: var(--light-blue);
   font-family: "Montserrat", sans-serif;
   margin: 5%;
   max-width: 940px;
@@ -8,7 +19,7 @@
 .header__button.name,
 .header__view-options,
 .people {
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 /* Display */
@@ -35,6 +46,10 @@
 .header__people,
 .person__contact {
   justify-content: space-between;
+}
+
+.contact__details.hidden {
+	display: none;
 }
 
 /* Box Model */
@@ -85,7 +100,7 @@
 }
 
 .m-people__person {
-  border-bottom: 1px solid #CDD3E1;
+  border-bottom: 1px solid var(--medium-grey);
   padding: 0 1em;
 }
 
@@ -122,18 +137,30 @@
 .header__button,
 .person__details {
   appearance: none;
-  background: #fff;
+  background: var(--white);
   border: none;
 }
 
 .header__button.export {
-  background-color: #F7F9FC;
+  background-color: var(--off-white);
   border-radius: 5px;
   font-size: .7em;
   margin: 2.5em 1em;
   -webkit-box-shadow: 0 4px 4px -6px grey;
   -moz-box-shadow: 0 4px 4px -6px grey;
   box-shadow: 0 4px 4px -6px grey;
+}
+
+.header__button.export:active,
+.header__button.export:focus,
+.header__button.export:hover {
+	background-color: var(--white);
+}
+
+.header__button.name:active
+.header__button.name:focus,
+.header__button.name:hover {
+	background-color: var(--off-white);
 }
 
 .header__button.export,
@@ -157,22 +184,22 @@
 .header__view-options,
 .people,
 .person__initials {
-  border: 1px solid #CDD3E1;
+  border: 1px solid var(--medium-grey);
 }
 
 .people__person--full-details {
-  border: 5px solid #00B241;
+  border: 5px solid var(--green);
 }
 
 /* Icons */
 /* light grey */
 .contact__info--incomplete {
-  color: #DCE0EC;
+  color: var(--light-grey);
 }
 
 /* medium grey */
 .header__button--unselected {
-  color: #CDD3E1;
+  color: var(--medium-grey);
 }
 
 /* dark grey */
@@ -180,15 +207,17 @@
 .fa-chevron-down,
 .person__initials,
 .person__location {
-  color: #868DA1;
+  color: var(--dark-grey);
 }
 
 .contact__info,
+.detail__list-item > .fa-m,
+.detail__list-item a,
+.fa-chevron-down:hover,
 .fa-file-download,
 .header__button--selected,
-.header__button.export,
-.detail__list-item > .fa-m {
-  color: #005DFA;
+.header__button.export {
+  color: var(--blue);
 }
 
 .fa-sort-alpha-up,
