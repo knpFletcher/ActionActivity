@@ -3,7 +3,7 @@
   font-family: "Montserrat", sans-serif;
   max-width: 940px;
   background-color: #EAEEF5;
-  margin: 2%;
+  margin: 5%;
 }
 
 .people,
@@ -16,17 +16,45 @@
 .header__view-options,
 .people__person,
 .contact__info,
+.person__quick-details,
+.header__people {
+  display: block;
+}
+
+.header__filters,
+.header__view-options,
+.header__people,
 .person__contact,
 .person__quick-details,
-.header__people,
-.header__filters {
+.contact__info {
   display: flex;
+}
+
+.header__filters,
+.header__view-options, {
+  justify-content: space-evenly;
+}
+
+.person__quick-details {
   align-items: center;
 }
 
-.l-header,
-.people__person {
+.person__contact,
+.header__people,
+.header__filters {
   justify-content: space-between;
+}
+
+.person__contact {
+  margin-left: 3.2em;
+}
+
+.l-main {
+  width: 100%;
+}
+
+.l-header {
+  margin-bottom: 20px;
 }
 
 /* Lists */
@@ -47,21 +75,11 @@
   background: #fff;
 }
 
-.header__button:hover,
-.header__button:focus,
-.person__details:hover,
-.person__details:focus {}
-
-.header__button:active,
-.person__details:active {}
-
 .header__button.export {
   background-color: #F7F9FC;
-  font-size: 12px;
-  max-height: 50px;
-  padding: .4em .7em;
+  font-size: .7em;
   border-radius: 5px;
-  margin: 1em;
+  margin: 2.5em 1em;
   -webkit-box-shadow: 0 4px 4px -6px grey;
 	   -moz-box-shadow: 0 4px 4px -6px grey;
 	        box-shadow: 0 4px 4px -6px grey;
@@ -75,7 +93,7 @@
 
 .header__button.name {
   margin-right: 1.2em;
-  padding: 1em;;
+  padding: 1em;
 }
 
 .header__button.name,
@@ -106,12 +124,11 @@
 
 .people__person {
   border-bottom: 1px solid #CDD3E1;
-  padding: 0 1em;
+  padding: 0 1em 1em;
 }
 
 .person__initials {
   border-radius: 50%;
-  font-size: 16px;
   width: 2em;
   line-height: 2em;
   text-align: center;
@@ -125,7 +142,7 @@
 
 .person__location {
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: .6em;
   letter-spacing: .1em;
   padding-top: .3em;
 }
@@ -170,7 +187,39 @@
 }
 
 /* Tablet */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .l-header,
+  .header__view-options,
+  .people__person,
+  .contact__info,
+  .person__contact,
+  .person__quick-details {
+    display: flex;
+    align-items: center;
+  }
+
+  .l-header,
+  .people__person {
+    justify-content: space-between;
+  }
+
+  .l-header {
+    margin-bottom: 0;
+  }
+
+  .l-body {
+    margin: 2%;
+  }
+
+  .person__contact {
+    margin-left: 0;
+  }
+
+  .people__person {
+    padding-bottom: 0;
+  }
+
+}
 
 /* Desktop */
 @media only screen and (min-width: 992px) {}
