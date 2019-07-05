@@ -13,6 +13,7 @@
 .l-body {
   background-color: var(--light-blue);
   font-family: "Montserrat", sans-serif;
+	font-weight: 400;
   margin: 5%;
   max-width: 940px;
 }
@@ -167,7 +168,7 @@
 .header__button.export,
 .header__people-count,
 .person__name {
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 .header__button.name,
