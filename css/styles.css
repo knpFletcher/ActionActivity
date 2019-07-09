@@ -104,7 +104,7 @@
 }
 
 .m-people__person {
-	border-bottom-color: #CDD3E1;
+	border-bottom: 1px solid #CDD3E1;
   border-bottom: 1px solid var(--medium-grey);
   padding: 0 1em;
 }
@@ -193,12 +193,12 @@
 .header__view-options,
 .people,
 .person__initials {
-	border-color: #CDD3E1;
+	border: 1px solid #CDD3E1;
   border: 1px solid var(--medium-grey);
 }
 
 .people__person--full-details {
-	border-color: #00B241;
+	border: 5px solid #00B241;
   border: 5px solid var(--green);
 }
 
